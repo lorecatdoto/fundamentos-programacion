@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fundamentos | Estudio de programación</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <a class="brand" href="#inicio"
+          ><span class="brand-icon">✳</span
+          ><span
+            >fundamentos<span class="brand-dot">.</span
+            ><small>ESTUDIO DE PROGRAMACIÓN</small></span
+          ></a
+        >
+        <div class="sidebar-label">TU RUTA DE APRENDIZAJE</div>
+        <nav id="nav" aria-label="Lecciones"></nav>
+        <div class="side-foot">
+          <div class="progress-head">
+            <span>Tu progreso</span><strong id="progressText">0 / 14</strong>
+          </div>
+          <div class="progress-track"><div id="progressBar"></div></div>
+          <small>Guardado en este navegador</small>
+        </div>
+      </aside>
+      <main>
+        <header class="topbar">
+          <span
+            >ESPACIO DE ESTUDIO <span class="slash">/</span>
+            <span id="breadcrumb">Introducción</span></span
+          ><a class="pdf-link" href="fundamentos.pdf" download
+            >↓ &nbsp; Descargar guía PDF</a
+          >
+        </header>
+        <div class="content" id="content"></div>
+        <footer>
+          Hecho para aprender a tu ritmo <span>✳</span> Practica, equivócate y
+          vuelve a intentar.
+        </footer>
+      </main>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
