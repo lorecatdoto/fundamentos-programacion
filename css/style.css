@@ -2,8 +2,8 @@
     --ink: #1f2a39;
     --muted: #687583;
     --line: #e4e8e8;
-    --green: #256c56;
-    --mint: #e8f2e9;
+    --green: var(--primary);
+    --mint: var(--primary-light);
     --orange: #ef9f67;
     --paper: #fafbf8
 }
@@ -16,7 +16,7 @@ body {
     margin: 0;
     background: var(--paper);
     color: var(--ink);
-    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-
 }
 
 .layout {
@@ -51,8 +51,8 @@ body {
 .brand-icon {
     display: grid;
     place-items: center;
-    background: #cee7d1;
-    color: #275a46;
+    background: #cddff3;
+    color: #254b7c;
     width: 42px;
     height: 42px;
     border-radius: 13px;
@@ -102,8 +102,8 @@ nav button {
 
 nav button:hover,
 nav button.active {
-    background: #edf5ed;
-    color: #286b52
+    background: var(--primary-light);
+    color: var(--primary)
 }
 
 nav button.active {
@@ -118,7 +118,7 @@ nav .num {
 
 nav .check {
     margin-left: auto;
-    color: #398466
+    color: #4a7fc1
 }
 
 .side-foot {
@@ -142,7 +142,7 @@ nav .check {
 
 .progress-track div {
     height: 100%;
-    background: #438769;
+    background: #4a7fc1;
     width: 0;
     transition: width .2s
 }
@@ -173,7 +173,7 @@ nav .check {
 .pdf-link {
     font-size: 12px;
     letter-spacing: 0;
-    color: #526a5d;
+    color: #5a6f8a;
     text-decoration: none;
     border: 1px solid #dde6df;
     border-radius: 8px;
@@ -187,8 +187,8 @@ nav .check {
 }
 
 .hero {
-    background: #e4f0e2;
-    border: 1px solid #dbead9;
+    background: var(--primary-bg);
+    border: 1px solid #d6e4f4;
     border-radius: 17px;
     padding: 43px 46px;
     display: grid;
@@ -201,24 +201,24 @@ nav .check {
     font-size: 11px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    color: #4b8164;
+    color: #4a7fc1;
     font-weight: 800
 }
 
 .hero h1,
 .lesson-title {
-    font-family: Georgia, serif;
+    font-family: Georgia, ;
     font-size: clamp(35px, 4.3vw, 56px);
     line-height: 1.12;
     letter-spacing: -1.8px;
     margin: 14px 0;
-    color: #243c35;
+    color: #1f3556;
     font-weight: 500
 }
 
 .hero p {
     max-width: 520px;
-    color: #607468;
+    color: #5a6f8a;
     font-size: 16px
 }
 
@@ -241,12 +241,12 @@ nav .check {
     inset: 16px 30px 18px 20px;
     transform: rotate(-8deg);
     padding: 28px;
-    color: #5a8267
+    color: #254b7c
 }
 
 .paper-card.two {
-    background: #33765a;
-    color: #d7f0d9;
+    background: #2f6bb5;
+    color: #e6eefa;
     inset: 37px 0 0 59px;
     transform: rotate(6deg);
     padding: 23px;
@@ -262,7 +262,7 @@ nav .check {
 }
 
 .btn {
-    background: #286f55;
+    background: var(--primary);
     color: white;
     border: 0;
     border-radius: 9px;
@@ -273,7 +273,7 @@ nav .check {
 }
 
 .btn:hover {
-    background: #1f5944
+    background: var(--primary-dark)
 }
 
 .hero .btn {
@@ -288,7 +288,7 @@ nav .check {
 }
 
 .section-head h2 {
-    font-family: Georgia, serif;
+    font-family: Georgia, ;
     font-size: 28px;
     letter-spacing: -.5px;
     margin: 0;
@@ -328,7 +328,7 @@ nav .check {
 }
 
 .card:hover {
-    border-color: #a4c9af;
+    border-color: #9dbce0;
     transform: translateY(-2px)
 }
 
@@ -344,7 +344,7 @@ nav .check {
     width: 38px;
     height: 38px;
     border-radius: 10px;
-    background: #e7f3e6;
+    background: var(--primary-light);
     font-size: 19px
 }
 
@@ -394,7 +394,7 @@ nav .check {
 }
 
 .lesson-content h2 {
-    font-family: Georgia, serif;
+    font-family: Georgia, ;
     font-size: 25px;
     font-weight: 500;
     margin: 4px 0 12px
@@ -411,8 +411,8 @@ nav .check {
 
 .tip {
     padding: 16px 18px;
-    background: #eef6ee;
-    border-left: 3px solid #68a678;
+    background: var(--primary-light);
+    border-left: 3px solid #5b8fd1;
     border-radius: 4px;
     margin: 22px 0;
     color: #4e6a58
@@ -435,13 +435,13 @@ nav .check {
 }
 
 .tab.active {
-    color: #286f55;
-    border-bottom: 2px solid #438769
+    color: var(--primary);
+    border-bottom: 2px solid #4a7fc1
 }
 
 .code {
-    background: #253631;
-    color: #e4f4e8;
+    background: #1f2d45;
+    color: #e6eefa;
     padding: 20px;
     border-radius: 9px;
     overflow: auto;
@@ -494,7 +494,7 @@ nav .check {
 
 .secondary {
     background: white;
-    color: #526a5d;
+    color: #5a6f8a;
     border: 1px solid #d9e4dd
 }
 
@@ -524,7 +524,7 @@ nav .check {
 }
 
 .meta-card .done {
-    color: #347a58;
+    color: #4a7fc1;
     font-size: 14px;
     font-weight: 700
 }
